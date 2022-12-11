@@ -31,7 +31,7 @@ public class Main {
         }
     }
 
-    public static void amountOfDeliveryDays(int deliveryDistance){
+    public static void amountOfDeliveryDays(int deliveryDistance) {
         if (deliveryDistance > 0 && deliveryDistance <= 20) {
             System.out.println("Потребуется дней: " + 1);
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
@@ -43,7 +43,7 @@ public class Main {
             System.out.println("Доставки нет");
         }
 
-}
+    }
 
     public static void task1() {
         System.out.println("Задание 1");
@@ -68,14 +68,13 @@ public class Main {
         int yearOfIssue = yearOfIssue1.nextInt();
         clientOSAndYearOfIssue(clientOS, yearOfIssue);
     }
-
     public static void task3() {
         System.out.println("Задание 3");
         Scanner deliveryDistance1 = new Scanner(System.in);
         System.out.println("Введите сколько киилометро занимает расстояние до Вас: ");
         int deliveryDistance= deliveryDistance1.nextInt();
         amountOfDeliveryDays(deliveryDistance);
-        }
     }
+}
 
 
